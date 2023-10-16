@@ -2,7 +2,7 @@
   .card-body .btn{
     padding: 0.2rem 0.5rem;
     font-size: 1rem;
-  }
+    }
   }
   
   @media only screen and (max-width: 1024px) {
@@ -10,16 +10,29 @@
   }
   
   @media only screen and (max-width: 991px) {
+    p {
+      font-size:13px;
+      line-height: 1.5;
+    }
+    a{
+      font-size: 1rem;
+    }
     .card-body .btn{
       font-size: 1rem;
+    }
+    span{
+      font-size: 13px;
+    }
+    h3{
+      font-size: 0.8rem;
     }
   }
   
   @media only screen and (max-width: 780px){
-    .carousel-item{
+    #product .carousel-item{
       height: auto;
   }
-  .card-body h2{
+  #product .card-body h2{
     font-size: 11px;
   }
   }
