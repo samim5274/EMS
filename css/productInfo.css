@@ -41,7 +41,7 @@ p {
 	margin: 0;
 	color:#818998;
 	font-size:1rem;
-    line-height: 1.9;
+    line-height: 1.6;
     text-transform: initial;
 }
 #productInfoSection img{
@@ -56,4 +56,17 @@ p {
 .col-lg-3{
 	padding-right: 0;
     padding-left: 0;
+}
+
+.heading{
+	font-size: 1rem;
+}
+.rating p{
+	font-size: 0.8rem;
+}
+.fa{
+	font-size: 1rem;
+}
+.checked{
+	color: #ff9500;
 }

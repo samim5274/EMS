@@ -60,7 +60,7 @@
     
 <!-- menu section start -->
 <section>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
         <a class="navbar-brand" href="#">
             <img src="img/logo2.png" width="40" height="40" alt="">e-COM
         </a>
@@ -165,8 +165,17 @@
                         <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div> 
                         <div class="text-center">
-                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="productInfo.php"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
                         </div>
                     </div>
@@ -183,8 +192,17 @@
                         <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <div class="text-center">
-                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="productInfo.php"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
                         </div>
                     </div>
@@ -201,8 +219,17 @@
                         <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <div class="text-center">
-                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="productInfo.php"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
                         </div>
                     </div>
@@ -219,8 +246,17 @@
                         <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <div class="text-center">
-                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="productInfo.php"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
                         </div>
                     </div>
@@ -249,6 +285,15 @@
                         <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <!-- <div class="text-center">
                         <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
@@ -267,6 +312,15 @@
                         <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <!-- <div class="text-center">
                         <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
@@ -285,6 +339,15 @@
                         <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <!-- <div class="text-center">
                         <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
@@ -303,6 +366,15 @@
                         <h2 class="productName"><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <!-- <div class="text-center">
                         <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
@@ -321,6 +393,15 @@
                         <h2 class="productName"><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <!-- <div class="text-center">
                         <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
@@ -339,6 +420,15 @@
                         <a href="index.php"><h2>BMW 6-series gran coupe</h2></a>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                        <div class="rating">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>   
+                        </div>
                         <!-- <div class="text-center">
                         <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
                         <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>

@@ -112,11 +112,22 @@
             </div>            
             <div class="col-lg-6 bg-light text-dark mt-4">
                 <div class="card-body">
-                    <h4>Product Detail: </h4>     <hr>                   
+                    <h4>Product Detail: </h4>     <hr>   
+                    <div class="rating">
+                        <span class="heading">User Rating</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>4.1 average based on 254 reviews.</p>   
+                    </div>             
                     <h2><a href="#">BMW 6-series gran coupe</a></h2>
                     <p>mode: 2017 <span>3100 mi</span> <span>240HP</span> automatic.</p>
-                    <h3>$89,395 <p>of <del> $95,000/-</del> <span>62%</span></p></h3>
+                    <h3>$89,395/-</h3>
+                    <p>of <del> $95,000/-</del> <span>32%</span></p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                    <p class="mb-2"> <span><b>Shop:</b> Abit Traders Ltd.</span><b> Address:</b> House#32, Road#10, Sector#4, Uttara, Dhaka-1230. <span><b>Email:</b> example@examl.com</span></p>
                     <div class="row">
                         <div class="col-md-6 text-center">
                             <a href="#"><button class="btn btn-block btn-md-sm btn-warning" type="submit"> Buy Now</button></a>
@@ -148,6 +159,7 @@
 
 
 <!-- product info section end -->
+
 
 
 
