@@ -155,14 +155,14 @@
         <div class="row">
             <h5 class="display-4 text-center py-4 top-title">Flash Deals</h5>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.5.jpg" alt="image loading...">
+                <div class="card"><a href="productInfo.php">
+                    <img src="img/2.5.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
                             <span>240HP</span> automatic
                         </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
+                        <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
                         <div class="text-center">
@@ -173,14 +173,14 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.4.jpg" alt="image loading...">
+                <div class="card"><a href="productInfo.php">
+                    <img src="img/2.4.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
                             <span>240HP</span> automatic
                         </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
+                        <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
                         <div class="text-center">
@@ -191,14 +191,14 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.3.jpg" alt="image loading...">
+                <div class="card"><a href="productInfo.php">
+                    <img src="img/2.3.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
                             <span>240HP</span> automatic
                         </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
+                        <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
                         <div class="text-center">
@@ -209,14 +209,14 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.2.jpg" alt="image loading...">
+                <div class="card"><a href="productInfo.php">
+                    <img src="img/2.2.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
                             <span>240HP</span> automatic
                         </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
+                        <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
                         <div class="text-center">
@@ -234,16 +234,13 @@
 <!-- flash deals section end -->
 
 
-<!-- All product section start -->
-
-
-<section id="Allproduct" class="product-section">
+<section id="product" class="product-section">
     <div class="container">
         <div class="row">
             <h5 class="display-4 text-center py-4 top-title">All Product</h5>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.2.jpg" alt="image loading...">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card"><a href="index.php">
+                    <img src="img/2.2.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
@@ -252,16 +249,16 @@
                         <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
+                        <!-- <div class="text-center">
+                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.3.jpg" alt="image loading...">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card"><a href="index.php">
+                    <img src="img/2.3.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
@@ -270,16 +267,16 @@
                         <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
+                        <!-- <div class="text-center">
+                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.4.jpg" alt="image loading...">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card"><a href="index.php">
+                    <img src="img/2.4.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
@@ -288,16 +285,16 @@
                         <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
+                        <!-- <div class="text-center">
+                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.5.jpg" alt="image loading...">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card"><a href="index.php">
+                    <img src="img/2.5.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
@@ -306,82 +303,46 @@
                         <h2 class="productName"><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
+                        <!-- <div class="text-center">
+                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.2.jpg" alt="image loading...">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card"><a href="index.php">
+                    <img src="img/2.5.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
                             <span>240HP</span> automatic
                         </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
+                        <h2 class="productName"><a href="index.php">BMW 6-series gran coupe</a></h2>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
+                        <!-- <div class="text-center">
+                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.3.jpg" alt="image loading...">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card"><a href="index.php">
+                    <img src="img/2.5.jpg" alt="image loading..." class="img-fluid"></a>
                     <div class="card-body">
                         <p>mode: 2017
                             <span>3100 mi</span>
                             <span>240HP</span> automatic
                         </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
+                        <a href="index.php"><h2>BMW 6-series gran coupe</h2></a>
                         <h3>$89,395</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.4.jpg" alt="image loading...">
-                    <div class="card-body">
-                        <p>mode: 2017
-                            <span>3100 mi</span>
-                            <span>240HP</span> automatic
-                        </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
-                        <h3>$89,395</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card mb-4">
-                    <img src="img/2.5.jpg" alt="image loading...">
-                    <div class="card-body">
-                        <p>mode: 2017
-                            <span>3100 mi</span>
-                            <span>240HP</span> automatic
-                        </p>
-                        <h2><a href="index.php">BMW 6-series gran coupe</a></h2>
-                        <h3>$89,395</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning " type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info " type="submit">Add Card</button></a>
-                        </div>
+                        <!-- <div class="text-center">
+                        <a href="#"><button class="btn btn-warning" type="submit">Buy Now</button></a>
+                        <a href="#"><button class="btn btn-info" type="submit">Add Card</button></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -390,18 +351,22 @@
 </section>
 
 
-<!-- All product section end -->
 
 
-<!-- Brand slide section start -->
 
-<section id="brandSlide">
-    <div class="container">
-        <div class="row"></div>
-    </div>
-</section>
 
-<!-- Brand slide section end -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
