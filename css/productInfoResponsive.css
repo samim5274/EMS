@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1700px) {
+    .btn{
+        padding: 0.5rem 4rem;
+        font-size: 1rem;
+      }
+    }
+@media only screen and (max-width: 1200px) {
+    .btn{
+        padding: 0.5rem 4rem;
+        font-size: 1rem;
+      }
+      #productInfoSection img{
+        height: 29rem;
+        width: 100%;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        
+    }
+    
+    @media only screen and (max-width: 991px) {
+        #productInfoSection .mt-3{
+            margin-top: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 780px){
+         
+    }
+
+    @media only screen and (max-width: 769px){
+        #productInfoSection .card-body .col-md-6{
+           width: 50%;
+         }
+         #productInfoSection .mt-4{
+            margin-top: 0 !important;
+        }
+        .Dinfo{
+            padding-right: calc(var(--bs-gutter-x) * .8);
+            padding-left: calc(var(--bs-gutter-x) * .8);
+        }
+        
+   }
+    
+    
+    @media only screen and (max-width: 710px)
+    {
+  
+    }
+    @media only screen and (max-width: 575px)
+    {
+        #productInfoSection .card-body .col-md-6{
+            width: 100%;
+            margin-top: 0.5rem;
+            padding: auto;
+          }
+    }
+  @media only screen and (max-width:468px)
+  {
+    
+  }

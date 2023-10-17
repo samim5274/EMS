@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/productInfo.css" media="screen">
-    <link rel="stylesheet" href="css/responsive.css" media="screen">
+    <link rel="stylesheet" href="css/productInfoResponsive.css" media="screen">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 <!-- menu section start -->
 <section>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 sticky-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="img/logo2.png" width="40" height="40" alt="">e-COM
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
@@ -26,12 +26,12 @@
         <div class="collapse navbar-collapse justify-content-center" id="collapseNavbar">
 		  <ul class="navbar-nav">
 			<li class="nav-item">
-			  <a class="nav-link" href="#">Home</a>
+			  <a class="nav-link" href="index.php">Home</a>
 			</li>
             <li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Fashion</a>
             <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="">Men</a></li>
                     <li><a class="dropdown-item" href="#">Women</a></li>
                     <li><a class="dropdown-item" href="#">Boy</a></li>
                     <li><a class="dropdown-item" href="#">Girl</a></li>
@@ -107,31 +107,50 @@
 <section id="productInfoSection">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <img src="img/2.4.jpg" alt="image loading..." class="img-fluid mt-4">
             </div>            
-            <div class="col-lg-4 bg-light text-dark mt-4">
+            <div class="col-lg-6 bg-light text-dark mt-4">
                 <div class="card-body">
-                        <p>mode: 2017
-                            <span>3100 mi</span>
-                            <span>240HP</span> automatic
-                        </p>
-                        <h2><a href="productInfo.php">BMW 6-series gran coupe</a></h2>
-                        <h3>$89,395</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
-                        <div class="text-center">
-                        <a href="#"><button class="btn btn-warning px-4 btn-lg" type="submit">Buy Now</button></a>
-                        <a href="#"><button class="btn btn-info px-4 btn-lg" type="submit">Add Card</button></a>
+                    <h4>Product Detail: </h4>     <hr>                   
+                    <h2><a href="#">BMW 6-series gran coupe</a></h2>
+                    <p>mode: 2017 <span>3100 mi</span> <span>240HP</span> automatic.</p>
+                    <h3>$89,395 <p>of <del> $95,000/-</del> <span>62%</span></p></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt suscipit commodi officiis aut quam.</p>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <a href="#"><button class="btn btn-block btn-md-sm btn-warning" type="submit"> Buy Now</button></a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <a href="#"><button class="btn btn-block btn-info" type="submit"> Add Card</button></a>
                         </div>
                     </div>
                 </div>
-            <div class="col-lg-4 bg-light text-dark mt-4"></div>
+            </div>
+            <div class="col-lg-3 bg-light text-dark mt-4 Dinfo">
+                <div class="row">
+                    <div class="card-body">
+                        <h5>Delvery Details</h5><hr>
+                        <p class="mb-2"><b>Location:</b> Dhaka, Dhaka North, Banani Road No. 12 - 19</p>
+                        <p class="mb-2"><b>Free Delivery:</b> 01-Jun to 13-Jun</p>                                        
+                        <p class="mb-2">Cash On Delivery Available</p>      
+                        <h5 class="small"><u>Service</u></h5>
+                        <p class="mb-2">7 Days Returns</p> 
+                        <h5 class="small">Change of mind is not applicable</h5>
+                        <p class="mb-2">1 Year Brand Warranty</p>
+                    </div>
+                   </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 
 <!-- product info section end -->
+
+
+
 
 
 

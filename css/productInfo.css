@@ -11,14 +11,14 @@
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-size:16px;
-	color:#818998;
+	color:#131a27;
     text-transform:initial;
     max-width:1920px;
     margin:0 auto;
 	overflow-x:hidden;
-    background-color: #969292;
+    background-color: #e6edf7;
 }
 
 a,a:hover,a:active,a:focus {
@@ -47,4 +47,13 @@ p {
 #productInfoSection img{
     height: 25rem;
     width: 100%;
+}
+#productInfoSection .SalerInfo{
+	height: 25rem;
+	width: 100%;
+	text-transform: lowercase;
+}
+.col-lg-3{
+	padding-right: 0;
+    padding-left: 0;
 }
