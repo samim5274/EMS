@@ -44,6 +44,10 @@ p {
     text-transform: initial;
 }
 
+#menu-section .nav-link:hover{
+	padding: 9px;
+}
+
 .carousel-item{
     height: 28rem;
 }

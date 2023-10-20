@@ -59,7 +59,7 @@
 
     
 <!-- menu section start -->
-<section>
+<section id="menu-section">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
         <a class="navbar-brand" href="#">
             <img src="img/logo2.png" width="40" height="40" alt="">e-COM

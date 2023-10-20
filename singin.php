@@ -16,11 +16,11 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Signup Here !</h2>
-                <button class="btn btn-info" onclick="document.getElementById('Signup').style.display='block'">Sign Up</button>
+                <button class="btn btn-info" onclick="btnOpenSingup()">Sign Up</button>
             </div>
             <div class="col-md-6">
                 <h2>Signin Here !</h2>
-                <button class="btn btn-warning" onclick="btnOpenBox()">Sign In</button>
+                <button class="btn btn-warning" onclick="btnOpenSingin()">Sign In</button>
             </div>
         </div>
     </div>
@@ -28,35 +28,73 @@
 
     <div id="Signup" class="modal">
 
-        <span onclick="btnClose()" class="close">&times;</span>
+        <span onclick="btnCloseSingup()" class="close">&times;</span>
 
         <form action="" method="POST" class="modal-content my-4">
             <div class="container">
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
+                <label for="name" class="form-label">User Name <span class="sm">(You cann't change username.Must use latter & Number)</span></label>
+                <input id="userName" type="text" class="form-control" placeholder="Username" name="name" required>
                 <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" placeholder="Enter your mail" name="email" required>
+                <input id="Mail" type="text" class="form-control" placeholder="Email" name="email" required>
                 <label for="pass" class="form-label">Password</label>
-                <input type="password" class="form-control" placeholder="Enter your password" name="pass" required>
+                <input id="Pass" type="password" class="form-control" placeholder="Password" name="pass" required>
                 <label for="re-pass" class="form-label">Retype Password</label>
-                <input type="password" class="form-control" placeholder="Enter your password" name="re-pass" required>
+                <input id="RePass" type="password" class="form-control" placeholder="Re-type assword" name="re-pass" required>
 
                 <label>
                     <input type="checkbox" checked="checked" name="rememb
-                    er" style="margin-bottom: 1rem;">Rember me
+                    er" class="cbxRem">Remember me
                 </label>
 
                 <p class="lead">By creating an account you agree to our <a href="#" style="colo: dodgreblu"> Terms & Privacy</a>.</p>
 
                 <div class="clearfix">
-                    <button class="btn btn-danger btnCancel" type="button" onclick="btnClose()">Cancel</button>
+                    <button class="btn btn-danger btnCancel" type="button" onclick="btnCloseSingup()">Cancel</button>
                     <button class="btn btn-success" type="button">Sign Up</button>
+                    <button onclick="txtClear()" class="btn btn-warning" type="button">Clear</button>
                 </div>
             </div>
         </form>
     </div>
 
+
+
+    <!-- singin section -->
+
+
+    <div id="Signin" class="modal2">
+
+        <span onclick="btnCloseSingin()" class="close">&times;</span>
+
+        <form action="" method="POST" class="modal-content my-4">
+
+            <div class="container">
+
+                <h1>Sign in</h1>
+                <hr>
+                <label for="email" class="form-label">Email or Username</label>
+                <input type="text" id="usernameOrEmail" class="form-control" placeholder="Email or Username" name="email" required>
+
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" id="LPass" class="form-control" placeholder="Password" name="pass" required>
+                
+                <label>
+                    <input type="checkbox" checked="checked" name="rememb
+                    er" class="cbxRem">Remember me
+                </label>
+
+                <div class="clearfix">
+                    <button class="btn btn-danger btnCancel" type="button" onclick="btnCloseSingin()">Cancel</button>
+                    <button class="btn btn-success" type="button">Sign Up</button>
+                    <button onclick="txtClear()" class="btn btn-warning" type="button">clear</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
 
 
 

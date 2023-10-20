@@ -42,11 +42,25 @@ button:hover{
     padding-top: 3.125rem;
 }
 
+.modal2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 3.125rem;
+}
+
 .modal-content{
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 0.1rem solid #888;
     width: 80%;
+    padding: 2rem;
 }
 
 hr{
@@ -72,4 +86,15 @@ hr{
     content: "";
     clear: both;
     display: table;
+}
+
+.cbxRem
+{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.sm{
+    font-size: 0.7rem;
+    opacity: 80%;
 }
