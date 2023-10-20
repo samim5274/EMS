@@ -35,10 +35,18 @@
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
-                <label for="name" class="form-label">User Name <span class="sm">(You cann't change username.Must use latter & Number)</span></label>
+
+                <label for="firstName" class="form-label">first Name</label>
+                <input id="userName" type="text" class="form-control" placeholder="Username" name="firstName" required>
+                <label for="name" class="form-label">User Name <span class="sm">(You cann't change username.)</span></label>
                 <input id="userName" type="text" class="form-control" placeholder="Username" name="name" required>
+
+                <label for="name" class="form-label">User Name <span class="sm">(You cann't change username.)</span></label>
+                <input id="userName" type="text" class="form-control" placeholder="Username" name="name" required>
+                
                 <label for="email" class="form-label">Email</label>
                 <input id="Mail" type="text" class="form-control" placeholder="Email" name="email" required>
+
                 <label for="pass" class="form-label">Password</label>
                 <input id="Pass" type="password" class="form-control" placeholder="Password" name="pass" required>
                 <label for="re-pass" class="form-label">Retype Password</label>
