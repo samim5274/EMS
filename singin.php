@@ -24,6 +24,8 @@
                 <button class="btn btn-warning" onclick="btnOpenSingin()">Sign In</button>
             </div>
         </div>
+        <p class="error"><?php if(isset($_GET['error'])) { echo $_GET['error']; } ?></p>
+        
     </div>
 
 
@@ -67,7 +69,7 @@
 
                     <button class="btn btn-danger btnCancel" type="button" onclick="btnCloseSingup()">Cancel</button>
 
-                    <button class="btn btn-success" type="submit" name="btnSingUp">Sing Up</button>
+                    <button class="btn btn-success" type="submit" name="btnSingUp" onclick="matchPass()">Sing Up</button>
                     
                     <button onclick="txtClear()" class="btn btn-warning" type="button">Clear</button>
 
