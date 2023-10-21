@@ -7,17 +7,11 @@ window.onclick = function(event){
     if(event.target == singup)
     {
         singup.style.display = "none";
-        document.getElementById('usernameOrEmail').value = '';
-        document.getElementById('Pass').value = '';
-        document.getElementById('RePass').value = '';
-        document.getElementById('userName').value = '';
-        document.getElementById('Mail').value = '';
+        txtClear();
     }
     if(event.target == singin){
         singin.style.display = "none";
-        document.getElementById('usernameOrEmail').value = '';
-        document.getElementById('LPass').value = '';
-        
+        txtClear();
     }
 }
 
@@ -27,10 +21,7 @@ function btnOpenSingup(){
 
 function btnCloseSingup(){
     document.getElementById('Signup').style.display = 'none';
-    document.getElementById('Pass').value = '';
-    document.getElementById('RePass').value = '';
-    document.getElementById('userName').value = '';
-    document.getElementById('Mail').value = '';
+    txtClear();
 }
 
 //singin js code
@@ -41,15 +32,17 @@ function btnOpenSingin(){
 
 function btnCloseSingin(){
     document.getElementById('Signin').style.display='none';
-    document.getElementById('usernameOrEmail').value = '';
-    document.getElementById('LPass').value = '';
+    txtClear();
 }
 
 function txtClear(){
     document.getElementById('usernameOrEmail').value = '';
     document.getElementById('LPass').value = '';
+    document.getElementById('firstName').value = '';
+    document.getElementById('lastName').value = '';
     document.getElementById('Pass').value = '';
     document.getElementById('RePass').value = '';
     document.getElementById('userName').value = '';
-    document.getElementById('Mail').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
 }

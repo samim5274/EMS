@@ -1,3 +1,4 @@
+<?php include 'emsdb.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,22 +31,25 @@
 
         <span onclick="btnCloseSingup()" class="close">&times;</span>
 
-        <form action="" method="POST" class="modal-content my-4">
+        <form action="userInfoBK.php" method="POST" class="modal-content my-4">
             <div class="container">
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
 
-                <label for="firstName" class="form-label">first Name</label>
-                <input id="userName" type="text" class="form-control" placeholder="Username" name="firstName" required>
-                <label for="name" class="form-label">User Name <span class="sm">(You cann't change username.)</span></label>
-                <input id="userName" type="text" class="form-control" placeholder="Username" name="name" required>
+                <label for="firstName" class="form-label">First Name</label>
+                <input id="firstName" type="text" class="form-control" placeholder="First Name" name="firstName" required>
+                <label for="lastName" class="form-label">Last Name</label>
+                <input id="lastName" type="text" class="form-control" placeholder="Last Name" name="lastName" required>
 
-                <label for="name" class="form-label">User Name <span class="sm">(You cann't change username.)</span></label>
-                <input id="userName" type="text" class="form-control" placeholder="Username" name="name" required>
+                <label for="userName" class="form-label">User Name <span class="sm">(You cann't change username.)</span></label>
+                <input id="userName" type="text" class="form-control" placeholder="Username" name="userName" required>
                 
                 <label for="email" class="form-label">Email</label>
-                <input id="Mail" type="text" class="form-control" placeholder="Email" name="email" required>
+                <input id="email" type="text" class="form-control" placeholder="Email" name="email" required>
+
+                <label for="phone" class="form-label">Phone</label>
+                <input id="phone" type="text" class="form-control" placeholder="Phone" name="phone" required>
 
                 <label for="pass" class="form-label">Password</label>
                 <input id="Pass" type="password" class="form-control" placeholder="Password" name="pass" required>
@@ -60,9 +64,13 @@
                 <p class="lead">By creating an account you agree to our <a href="#" style="colo: dodgreblu"> Terms & Privacy</a>.</p>
 
                 <div class="clearfix">
+
                     <button class="btn btn-danger btnCancel" type="button" onclick="btnCloseSingup()">Cancel</button>
-                    <button class="btn btn-success" type="button">Sign Up</button>
+
+                    <button class="btn btn-success" type="submit" name="btnSingUp">Sing Up</button>
+                    
                     <button onclick="txtClear()" class="btn btn-warning" type="button">Clear</button>
+
                 </div>
             </div>
         </form>
