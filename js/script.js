@@ -46,13 +46,3 @@ function txtClear(){
     document.getElementById('email').value = '';
     document.getElementById('phone').value = '';
 }
-
-function matchPass(){
-   var pass = document.getElementById('Pass');
-   var pass2 = document.getElementById('RePass');
-   if(pass != pass2)
-   {
-        txtError = "Password aren't matched. Please input currect password. Thank you!";
-   }
-   document.getElementById("demo").innerHTML = txtError;
-}
