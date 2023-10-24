@@ -13,31 +13,42 @@ include 'emsdb.php';
         $password = $_POST['pass'];
         $rePass = $_POST['re-pass'];
 
-        if(!is_numeric($phone))
+        $findUser = "SELECT * FROM tb_userinfo WHERE userName = '$userName'";
+        $findUserResult = mysqli_query($conn,$findUser);
+
+        if(mysqli_num_rows($findUserResult))
         {
-            header("Location: singin.php?error=Your phone number is not valid. Please input currect phone number. Thank you!");
+            header("Location: singin.php?error=Username already taken. Use defferent username and try again. Thank you!");
             exit();
         }
-        else 
+        else
         {
-            if($password == $rePass)
+            if(!is_numeric($phone))
             {
-                $sqlData = "INSERT INTO `tb_userinfo`(`fullName`, `userName`, `email`, `phone`, `password`) VALUES ('$fullName','$userName','$mail','$phone','$password')";
-
-                $sqlResult = mysqli_query($conn,$sqlData);
-
-                if(!$sqlResult)
-                {
-                    echo "User create failed. Please try again. Thank you!";
-                }
-                else
-                {
-                    header("Location: singin.php?error=New user create successfully. Wait for confirmation. Thank you!");
-                }
-            }
-            else{
-                header("Location: singin.php?error=Password cann't matched. Please input same password. Thank you!");
+                header("Location: singin.php?error=Your phone number is not valid. Please input currect phone number. Thank you!");
                 exit();
+            }
+            else 
+            {
+                if($password == $rePass)
+                {
+                    $sqlData = "INSERT INTO `tb_userinfo`(`fullName`, `userName`, `email`, `phone`, `password`) VALUES ('$fullName','$userName','$mail','$phone','$password')";
+
+                    $sqlResult = mysqli_query($conn,$sqlData);
+
+                    if(!$sqlResult)
+                    {
+                        echo "User create failed. Please try again. Thank you!";
+                    }
+                    else
+                    {
+                        header("Location: singin.php?New user create successfully. Wait for confirmation. Thank you!");
+                    }
+                }
+                else{
+                    header("Location: singin.php?error=Password cann't matched. Please input same password. Thank you!");
+                    exit();
+                }
             }
         }
     }

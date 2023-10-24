@@ -145,7 +145,8 @@
               </ul>
 			</li>
             <li class="nav-item">
-			  <a class="nav-link" href="singin.php">
+                <a href="#" class="nav-link">Profail</a>
+			  <!-- <a class="nav-link" href="singin.php">
 <?php 
 
 $uname = "".$_SESSION['fullName']; 
@@ -161,7 +162,7 @@ else{
     //header("Location: signin.php");
 }
 
-?></a>
+?></a> -->
 
 			</li>	            
 		  </ul>	
