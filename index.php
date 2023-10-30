@@ -3,6 +3,7 @@
     include 'emsdb.php'; 
     session_start();
 
+
     if(isset($_SESSION['Id']) && isset($_SESSION['fullName'])) {
 
 ?>
@@ -77,8 +78,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="collapseNavbar">
 		  <ul class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+			  <a class="nav-link" href="index.php">Home</a>
+			</li>
+            <li class="nav-item">
+			  <a class="nav-link" href="addProduct.php">Add Product</a>
 			</li>
             <li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Fashion</a>
@@ -145,11 +149,13 @@
               </ul>
 			</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Profail</a>
-			  <!-- <a class="nav-link" href="singin.php">
+                <!-- <a href="#" class="nav-link">Profail</a> -->
+			    <a class="nav-link" href="singin.php">
 <?php 
 
-$uname = "".$_SESSION['fullName']; 
+$uname = "".$_SESSION['fullName'];
+$Id = "".$_SESSION['Id'];
+
 if(!$uname)
 {
     echo"Login";
@@ -161,8 +167,9 @@ else{
     unset($_SESSION['Id']);
     //header("Location: signin.php");
 }
-
-?></a> -->
+            
+            
+?></a> 
 
 			</li>	            
 		  </ul>	
@@ -170,6 +177,22 @@ else{
     </nav>
 </section>
 <!-- menu section end -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2><?php 
+            if($uname && $Id)
+            {
+                $_SESSION['fullName'] = $uname;
+                $_SESSION['Id'] = $Id;
+            }
+            
+            ?></h2>
+        </div>
+    </div>
+</div>
 
 
 
