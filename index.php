@@ -3,7 +3,6 @@
     include 'emsdb.php'; 
     session_start();
 
-
     if(isset($_SESSION['Id']) && isset($_SESSION['fullName'])) {
 
 ?>
@@ -20,6 +19,17 @@
     <link rel="stylesheet" href="css/responsive.css" media="screen">
 </head>
 <body>
+
+<?php 
+    $uname = "".$_SESSION['fullName'];
+    $Id = "".$_SESSION['Id'];
+    if($uname && $Id)
+    {
+        $_SESSION['fullName'] = $uname;
+        $_SESSION['Id'] = $Id;
+    }
+?>
+
 
 <!-- slid section start -->
 <section>
@@ -150,27 +160,7 @@
 			</li>
             <li class="nav-item">
                 <!-- <a href="#" class="nav-link">Profail</a> -->
-			    <a class="nav-link" href="singin.php">
-<?php 
-
-$uname = "".$_SESSION['fullName'];
-$Id = "".$_SESSION['Id'];
-
-if(!$uname)
-{
-    echo"Login";
-}
-else{
-    echo"".$uname." Logout";
-    
-    unset($_SESSION['fullName']);
-    unset($_SESSION['Id']);
-    //header("Location: signin.php");
-}
-            
-            
-?></a> 
-
+			    <a class="nav-link" href="logout.php">logout</a> 
 			</li>	            
 		  </ul>	
 		</div>
@@ -179,25 +169,9 @@ else{
 <!-- menu section end -->
 
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h2><?php 
-            if($uname && $Id)
-            {
-                $_SESSION['fullName'] = $uname;
-                $_SESSION['Id'] = $Id;
-            }
-            
-            ?></h2>
-        </div>
-    </div>
-</div>
-
 
 
 <!-- flash deals section start -->
-
 
 
 <section id="product" class="product-section">
