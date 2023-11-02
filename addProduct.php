@@ -50,8 +50,18 @@
                 <li class="page-item"><a href="index.php" class="page-link bg-warning">Back</a></li>
             </ul>
             </div>
+<<<<<<< HEAD
             <div class="col">
                 <form  method="post" action="addProductBK.php" enctype="multipart/form-data" class="p-3 mt-3">
+=======
+<<<<<<< HEAD
+            <div class="col">
+                <form  method="post" action="addProductBK.php" enctype="multipart/form-data" class="p-3 mt-3">
+=======
+            <div class="col-6">
+                <form  method="post" action="addProductBK.php" class="p-3 mt-3">
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 
                     <label for="productTitle" class="form-label">Product title</label>
                     <input id="productTitle" type="text" class="form-control" placeholder="Product title" name="productTitle" required>
@@ -110,7 +120,15 @@
                     <label for="offerPrice" class="form-label">Offer Price</label>
                     <input id="offerPrice" type="number" class="form-control" placeholder="Offer Price" name="offerPrice" required>
 
+<<<<<<< HEAD
                     <label for="discription"class="form-label">Discription</label>
+=======
+<<<<<<< HEAD
+                    <label for="discription"class="form-label">Discription</label>
+=======
+                    <label for="discription"class="form-label">discription</label>
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
                     <textarea required class="form-control" name="discription" placeholder="Write your short discription(Optional)!" id="discription" cols="30" rows="5"></textarea>
                     <br>
 
@@ -120,7 +138,17 @@
 
                 <input type="submit" name="btnSave" class="btn btn-primary btn-block" value="Save">
                 </form>
+<<<<<<< HEAD
             </div>
+=======
+<<<<<<< HEAD
+            </div>
+=======
+
+            </div>
+            <div class="col-6"><p>All Product</p></div>
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
         </div>
     </div>
 </section>
@@ -128,6 +156,10 @@
 
 <!--Product input Design code end-->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 <div class="container">
     <div class="row">
         <div class="col-6">
@@ -145,6 +177,7 @@
                     </tr>
                     <tbody>
                         <?php
+<<<<<<< HEAD
                         $i=1;
                         $sqlDataShow = "SELECT * FROM tb_productinfo";
                         $sqlResultShow = mysqli_query($conn,$sqlDataShow);
@@ -163,12 +196,38 @@
                                 <td><img src="Pic/<?php echo $img['Image']?>" width="200" alt="Picture not found"></td>
                             </tr>
         <?php $i++; endforeach?>
+=======
+                        $i=0;
+                        $sqlDataShow = "SELECT * FROM tb_productinfo";
+                        $sqlResultShow = mysqli_query($conn,$sqlDataShow);
+                        while($row = $sqlResultShow->fetch_assoc())
+                        {
+                            echo"<tr>
+                                <td>".$row['ProductTitle']."</td>
+                                <td>".$row['DepName']."</td>
+                                <td>".$row['CatName']."</td>
+                                <td>".$row['Manufacture']."</td>
+                                <td>".$row['PurchasePrice']."</td>
+                                <td>".$row['SalePrice']."</td>
+                                <td>".$row['OfferPrice']."</td>
+                                <td>".$row['Discription']."</td>
+                                <td>".$row['Image']."</td>
+                            </tr>";
+                        }
+                        
+                        ?>
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
                         
                     </tbody>
                 </table>
             </div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 
 
 

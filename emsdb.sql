@@ -3,7 +3,15 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Oct 30, 2023 at 01:21 PM
+=======
+<<<<<<< HEAD
+-- Generation Time: Oct 30, 2023 at 01:21 PM
+=======
+-- Generation Time: Nov 01, 2023 at 01:39 PM
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -100,6 +108,43 @@ INSERT INTO `tb_department` (`Id`, `dep_Name`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+-- Table structure for table `tb_productinfo`
+--
+
+CREATE TABLE `tb_productinfo` (
+  `Id` int(11) NOT NULL,
+  `ProductTitle` varchar(255) NOT NULL,
+  `DepName` varchar(255) NOT NULL,
+  `CatName` varchar(255) NOT NULL,
+  `Manufacture` varchar(255) NOT NULL,
+  `PurchasePrice` int(11) NOT NULL,
+  `SalePrice` int(11) NOT NULL,
+  `OfferPrice` int(11) NOT NULL,
+  `Discription` int(11) NOT NULL,
+  `Image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_productinfo`
+--
+
+INSERT INTO `tb_productinfo` (`Id`, `ProductTitle`, `DepName`, `CatName`, `Manufacture`, `PurchasePrice`, `SalePrice`, `OfferPrice`, `Discription`, `Image`) VALUES
+(1, 'asdf', 'Sport', 'Computer', 'Uniliver', 3, 3, 3, 3, '2.3.jpg'),
+(2, 'Aaa', 'Electronic', 'Mobail', 'Uniliver', 1000, 170, 165, 0, '7d22506969dc2c7e36a587ac50352f9d78dbab51.webp'),
+(3, 'Aaa', 'Fashion', 'Laptop', 'Uniliver', 100, 120, 115, 0, 'asdfasdf.jpg'),
+(4, 'AaaA', 'Sport', 'Computer', 'Uniliver', 444, 444, 444, 444, '1581695119.jpg'),
+(5, 'AaaA', 'Electronic', 'Computer', 'Uniliver', 1111, 111, 111, 111, 'pngwing.com.png'),
+(6, 'AaaA', '', '', '', 1, 1, 1, 1, 'pngwing.com.png');
+
+-- --------------------------------------------------------
+
+--
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 -- Table structure for table `tb_userinfo`
 --
 
@@ -117,8 +162,18 @@ CREATE TABLE `tb_userinfo` (
 --
 
 INSERT INTO `tb_userinfo` (`Id`, `fullName`, `userName`, `email`, `phone`, `password`) VALUES
+<<<<<<< HEAD
 (1, 'Shamim Hossain', 'samim1', 'banglarcele1122@gmail.com', 1762134746, 'asdf'),
 (9, 'Shamim Hossain', 'samim', 'samim.hossen5274@gmail.com', 1762134746, 'asdf'),
+=======
+<<<<<<< HEAD
+(1, 'Shamim Hossain', 'samim1', 'banglarcele1122@gmail.com', 1762134746, 'asdf'),
+(9, 'Shamim Hossain', 'samim', 'samim.hossen5274@gmail.com', 1762134746, 'asdf'),
+=======
+(1, 'Shamim Hossain', 'samim1', 'asdf@gmail.com', 1762134746, 'a'),
+(9, 'Shamim Hossain', 'samim', 'samim.hossen5274@gmail.com', 1762134746, 'a'),
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 (10, 'Indrojit Mondol', 'indrojit123', 'indrojit@gmail.com', 321654987, 'asdf'),
 (11, 'mamun hossain', 'mamun', 'mamun@gmail.com', 123456798, 'asdf'),
 (12, 'Atikur Islam', 'atik', 'atik@gmail.com', 123456789, 'asdf'),
@@ -142,6 +197,18 @@ ALTER TABLE `tb_department`
   ADD PRIMARY KEY (`Id`);
 
 --
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+-- Indexes for table `tb_productinfo`
+--
+ALTER TABLE `tb_productinfo`
+  ADD PRIMARY KEY (`Id`);
+
+--
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 -- Indexes for table `tb_userinfo`
 --
 ALTER TABLE `tb_userinfo`
@@ -164,6 +231,18 @@ ALTER TABLE `tb_department`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+-- AUTO_INCREMENT for table `tb_productinfo`
+--
+ALTER TABLE `tb_productinfo`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
+>>>>>>> 2b5027767ff815473f6344126b41e1d0580c555c
 -- AUTO_INCREMENT for table `tb_userinfo`
 --
 ALTER TABLE `tb_userinfo`
