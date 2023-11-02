@@ -50,8 +50,13 @@
                 <li class="page-item"><a href="index.php" class="page-link bg-warning">Back</a></li>
             </ul>
             </div>
+<<<<<<< HEAD
             <div class="col">
                 <form  method="post" action="addProductBK.php" enctype="multipart/form-data" class="p-3 mt-3">
+=======
+            <div class="col-6">
+                <form  method="post" action="addProductBK.php" class="p-3 mt-3">
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
 
                     <label for="productTitle" class="form-label">Product title</label>
                     <input id="productTitle" type="text" class="form-control" placeholder="Product title" name="productTitle" required>
@@ -110,7 +115,11 @@
                     <label for="offerPrice" class="form-label">Offer Price</label>
                     <input id="offerPrice" type="number" class="form-control" placeholder="Offer Price" name="offerPrice" required>
 
+<<<<<<< HEAD
                     <label for="discription"class="form-label">Discription</label>
+=======
+                    <label for="discription"class="form-label">discription</label>
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
                     <textarea required class="form-control" name="discription" placeholder="Write your short discription(Optional)!" id="discription" cols="30" rows="5"></textarea>
                     <br>
 
@@ -120,7 +129,13 @@
 
                 <input type="submit" name="btnSave" class="btn btn-primary btn-block" value="Save">
                 </form>
+<<<<<<< HEAD
             </div>
+=======
+
+            </div>
+            <div class="col-6"><p>All Product</p></div>
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
         </div>
     </div>
 </section>
@@ -128,6 +143,7 @@
 
 <!--Product input Design code end-->
 
+<<<<<<< HEAD
 <div class="container">
     <div class="row">
         <div class="col-6">
@@ -170,6 +186,8 @@
             </div>
     </div>
 </div>
+=======
+>>>>>>> 00c50fba15f63392b08d27a9e73cb265717fd8f4
 
 
 
