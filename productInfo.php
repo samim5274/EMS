@@ -1,3 +1,11 @@
+<?php 
+
+    include 'emsdb.php'; 
+    session_start();
+
+    if(isset($_SESSION['Id']) && isset($_SESSION['fullName'])) {
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +20,15 @@
 </head>
 <body>
 
-
+<?php 
+    $uname = "".$_SESSION['fullName'];
+    $Id = "".$_SESSION['Id'];
+    if($uname && $Id)
+    {
+        $_SESSION['fullName'] = $uname;
+        $_SESSION['Id'] = $Id;
+    }
+?>
     
 <!-- menu section start -->
 <section>
@@ -171,3 +187,13 @@
 
 </body>
 </html>
+
+<?php 
+
+    }
+    else{
+        header("Location: singin.php");
+        exit();
+    }
+
+?>
