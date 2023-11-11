@@ -20,6 +20,17 @@
 </head>
 <body>
 
+<?php 
+    $uname = "".$_SESSION['fullName'];
+    $Id = "".$_SESSION['Id'];
+    if($uname && $Id)
+    {
+        $_SESSION['fullName'] = $uname;
+        $_SESSION['Id'] = $Id;
+    }
+?>
+
+
 <!-- slid section start -->
 <section>
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -77,8 +88,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="collapseNavbar">
 		  <ul class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+			  <a class="nav-link" href="index.php">Home</a>
+			</li>
+            <li class="nav-item">
+			  <a class="nav-link" href="addProduct.php">Add Product</a>
 			</li>
             <li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Fashion</a>
@@ -145,25 +159,8 @@
               </ul>
 			</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Profail</a>
-			  <!-- <a class="nav-link" href="singin.php">
-<?php 
-
-$uname = "".$_SESSION['fullName']; 
-if(!$uname)
-{
-    echo"Login";
-}
-else{
-    echo"".$uname." Logout";
-    
-    unset($_SESSION['fullName']);
-    unset($_SESSION['Id']);
-    //header("Location: signin.php");
-}
-
-?></a> -->
-
+                <!-- <a href="#" class="nav-link">Profail</a> -->
+			    <a class="nav-link" href="logout.php">logout</a> 
 			</li>	            
 		  </ul>	
 		</div>
@@ -173,8 +170,8 @@ else{
 
 
 
-<!-- flash deals section start -->
 
+<!-- flash deals section start -->
 
 
 <section id="product" class="product-section">

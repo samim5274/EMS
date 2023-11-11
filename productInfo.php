@@ -1,3 +1,11 @@
+<?php 
+
+    include 'emsdb.php'; 
+    session_start();
+
+    if(isset($_SESSION['Id']) && isset($_SESSION['fullName'])) {
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +20,15 @@
 </head>
 <body>
 
-
+<?php 
+    $uname = "".$_SESSION['fullName'];
+    $Id = "".$_SESSION['Id'];
+    if($uname && $Id)
+    {
+        $_SESSION['fullName'] = $uname;
+        $_SESSION['Id'] = $Id;
+    }
+?>
     
 <!-- menu section start -->
 <section>
@@ -101,6 +117,8 @@
 </section>
 <!-- menu section end -->
 
+
+
 <!-- product info section start -->
 
 
@@ -108,6 +126,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
+                <?php 
+                    $sqlDataShow = "SELECT * FROM tb_productinfo";
+                    $sqlResultShow = mysqli_query($conn,$sqlDataShow);
+                ?>
                 <img src="img/2.4.jpg" alt="image loading..." class="img-fluid mt-4">
             </div>            
             <div class="col-lg-6 bg-light text-dark mt-4">
@@ -161,13 +183,107 @@
 <!-- product info section end -->
 
 
+<!-- <div class="col-lg-3">
+    <?php 
+        $sqlDataShow = "SELECT * FROM tb_productinfo WHERE Id = 15";
+        $sqlResultShow = mysqli_query($conn,$sqlDataShow);
+    
+    foreach($sqlResultShow as $img): ?>
+        <tr>
+            <td><?php echo $img['ProductTitle']; ?></td>
+            <td><img src="Pic/<?php echo $img['Image']?>" width="200" alt="Picture not found"></td>
+            
+        </tr>
+    <?php endforeach?>
 
+</div> -->
 
+<section id="productInfoSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+            <?php 
+                $sqlDataShow = "SELECT * FROM tb_productinfo WHERE Id = 16";
+                $sqlResultShow = mysqli_query($conn,$sqlDataShow);
+            
+                foreach($sqlResultShow as $img){?>
+                <img src="Pic/<?php echo $img['Image']?>" alt="image loading..." class="img-fluid mt-4">
+            </div>            
+            <div class="col-lg-6 bg-light text-dark mt-4">
+                <div class="card-body">
+                    <h4>Product Detail: </h4>     <hr>   
+                    <div class="rating">
+                        <span class="heading">User Rating</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>4.1 average based on 254 reviews.</p>   
+                    </div>             
+                    <h2><?php echo $img['ProductTitle']; ?></h2>
 
+                    <p>Model: 2017 <span>3100 mi</span> <span>240HP</span> automatic.</p>
 
+                    <h3>$<?php echo $img['OfferPrice']; ?>/-</h3>
+                    
+                    <p>of <del> $<?php echo $img['SalePrice']; ?>/-</del> <span>32%</span></p>
+
+                    <p><?php echo $img['Discription']; ?></p>
+
+                    <?php
+                    $sqlDataShow = "SELECT * FROM tb_userinfo WHERE Id = $Id";
+                    $sqlResultShow = mysqli_query($conn,$sqlDataShow);
+                    foreach($sqlResultShow as $ds){
+                    ?>
+
+                    <p class="mb-2"> <span><b>Shop: </b><?php echo $ds['ShopName']; ?></span><b> Address: </b><?php echo $ds['Address']; ?><span><b> Email: </b> <?php echo $ds['email']; ?></span></p>
+                        <?php } ?>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <a href="#"><button class="btn btn-block btn-md-sm btn-warning" type="submit"> Buy Now</button></a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <a href="#"><button class="btn btn-block btn-info" type="submit"> Add Card</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-3 bg-light text-dark mt-4 Dinfo">
+                <div class="row">
+                    <div class="card-body">
+                        <h5>Delvery Details</h5><hr>
+                        <p class="mb-2"><b>Location:</b> Dhaka, Dhaka North, Banani Road No. 12 - 19</p>
+                        <p class="mb-2"><b>Free Delivery:</b> 01-Jun to 13-Jun</p>                                        
+                        <p class="mb-2">Cash On Delivery Available</p>      
+                        <h5 class="small"><u>Service</u></h5>
+                        <p class="mb-2">7 Days Returns</p> 
+                        <h5 class="small">Change of mind is not applicable</h5>
+                        <p class="mb-2">1 Year Brand Warranty</p>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <?php    }
+            ?>
+        </div>
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
+<?php 
+
+    }
+    else{
+        header("Location: singin.php");
+        exit();
+    }
+
+?>
