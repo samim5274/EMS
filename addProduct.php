@@ -53,6 +53,15 @@
             <div class="col">
                 <form  method="post" action="addProductBK.php" enctype="multipart/form-data" class="p-3 mt-3">
 
+            <div class="col">
+                <form  method="post" action="addProductBK.php" enctype="multipart/form-data" class="p-3 mt-3">
+
+            <div class="col">
+                <form  method="post" action="addProductBK.php" enctype="multipart/form-data" class="p-3 mt-3">
+
+            <div class="col-6">
+                <form  method="post" action="addProductBK.php" class="p-3 mt-3">
+
                     <label for="productTitle" class="form-label">Product title</label>
                     <input id="productTitle" type="text" class="form-control" placeholder="Product title" name="productTitle" required>
 
@@ -111,6 +120,13 @@
                     <input id="offerPrice" type="number" class="form-control" placeholder="Offer Price" name="offerPrice" required>
 
                     <label for="discription"class="form-label">Discription</label>
+
+                    <label for="discription"class="form-label">Discription</label>
+
+                    <label for="discription"class="form-label">Discription</label>
+
+                    <label for="discription"class="form-label">discription</label>
+
                     <textarea required class="form-control" name="discription" placeholder="Write your short discription(Optional)!" id="discription" cols="30" rows="5"></textarea>
                     <br>
 
@@ -120,14 +136,23 @@
 
                 <input type="submit" name="btnSave" class="btn btn-primary btn-block" value="Save">
                 </form>
+
             </div>
+
+            </div>
+
+            </div>
+
+
+            </div>
+            <div class="col-6"><p>All Product</p></div>
+
         </div>
     </div>
 </section>
 
 
 <!--Product input Design code end-->
-
 <div class="container">
     <div class="row">
         <div class="col-6">
@@ -163,6 +188,26 @@
                                 <td><img src="Pic/<?php echo $img['Image']?>" width="200" alt="Picture not found"></td>
                             </tr>
         <?php $i++; endforeach?>
+
+                        $i=0;
+                        $sqlDataShow = "SELECT * FROM tb_productinfo";
+                        $sqlResultShow = mysqli_query($conn,$sqlDataShow);
+                        while($row = $sqlResultShow->fetch_assoc())
+                        {
+                            echo"<tr>
+                                <td>".$row['ProductTitle']."</td>
+                                <td>".$row['DepName']."</td>
+                                <td>".$row['CatName']."</td>
+                                <td>".$row['Manufacture']."</td>
+                                <td>".$row['PurchasePrice']."</td>
+                                <td>".$row['SalePrice']."</td>
+                                <td>".$row['OfferPrice']."</td>
+                                <td>".$row['Discription']."</td>
+                                <td>".$row['Image']."</td>
+                            </tr>";
+                        }
+                        
+                        ?>
                         
                     </tbody>
                 </table>
